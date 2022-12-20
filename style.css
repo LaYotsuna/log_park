@@ -1,0 +1,198 @@
+/* LOGIN */
+.login-form {
+  display: flex;
+
+  width: 28rem;
+  height: 27rem;
+  max-width: 600px;
+  min-width: 450px;
+  background-color: #f8f9fa;
+  position: relative;
+  border-radius: 0.6rem;
+  box-shadow: 5px 5px 10px #1b8664;
+  margin: auto;
+  margin-top: 48px;
+  margin-bottom: 5rem;
+}
+
+.forgot-pwd {
+  position: absolute;
+
+  color: #0ca678;
+  font-size: 16px;
+  font-weight: 400;
+  top: 90px;
+  right: 40px;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+/* BUTTONS */
+.submit-btn {
+  display: block;
+
+  margin-top: 40px;
+  margin-bottom: 20px;
+  background: linear-gradient(to top left, #28b487, #7dd56f);
+  color: #f8f9fa;
+  text-decoration: none;
+  padding: 13px;
+  border-radius: 0.25rem;
+  border: none;
+  width: 375px;
+  transition: all 0.1s;
+}
+
+.submit-btn:active {
+  transform: scale(0.98);
+  box-shadow: 0px 1px 7px #ced4da;
+}
+
+.singup-btn {
+  display: block;
+
+  color: #0ca678;
+  margin: 0 auto;
+  width: 375px;
+  text-decoration: none;
+  padding: 13px;
+  border-radius: 0.25rem;
+  font-size: 16px;
+  text-align: center;
+  border: 1px solid #ced4da;
+  box-shadow: 0 2px 5px 1px #ced4da;
+}
+
+/* APP VERSION */
+.version {
+  margin-top: -3rem;
+}
+
+/* HIDDEN SINGUP FORM */
+.singup-form {
+  display: flex;
+
+  position: relative;
+
+  width: 28rem;
+  height: 33rem;
+  max-width: 600px;
+  min-width: 450px;
+  background-color: #f8f9fa;
+  border-radius: 0.6rem;
+  margin: auto;
+  padding-top: 10px;
+}
+
+.singup-title {
+  font-size: 24px;
+}
+
+/* BUTTON */
+.close-btn {
+  position: absolute;
+
+  color: #0ca678;
+  font-size: 16px;
+  font-weight: 400;
+  top: 60px;
+  right: 40px;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+/* CHECKBOX */
+.terms-box {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.terms {
+  text-decoration: none;
+  color: #0ca678;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* OVERLAY */
+.hidden {
+  display: none;
+}
+
+.modal {
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.overlay {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(42, 41, 41, 0.7);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+
+/* HIDDEN RESET PASSWORD MODULE */
+.modal-pwd {
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+/* HIDDEN RESET PASSWORD FORM */
+.reset-pwd-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 28rem;
+  height: 19rem;
+  max-width: 600px;
+  min-width: 450px;
+  background-color: #f8f9fa;
+  border-radius: 0.6rem;
+  padding-top: 10px;
+}
+
+.reset-pwd-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 375px;
+}
+
+.reset-pwd-title {
+  align-self: flex-start;
+
+  margin-bottom: 40px;
+  color: #343a40;
+  font-size: 24px;
+}
+
+.reset-pwd-info {
+  color: #868e96;
+  font-weight: 400;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.pwd {
+  margin-top: 20px;
+}

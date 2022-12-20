@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - Log Park</title>
+    <link rel="icon" href="./img/icon.png" type="image/gif" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="general.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+  </head>
+  <body>
+    <!-- BRAND -->
+    <div class="brand">
+      <a href="#">
+        <img src="./img/logo-3.png" alt="Logo" class="logo" />
+      </a>
+    </div>
+
+    <!-- LOGIN -->
+    <section class="login">
+      <form method="post" action="#" class="login-form">
+        <fieldset>
+          <h2>Login</h2>
+          <button class="forgot-pwd show-modal-pwd">Esqueceu a senha?</button>
+          <!-- EMAIL LOGIN -->
+          <input
+            type="email"
+            name="email"
+            id="email-login"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+            placeholder="Email"
+            required
+          />
+          <!-- PASSWORD LOGIN -->
+          <input
+            type="password"
+            name="senha"
+            id="senha"
+            placeholder="Senha"
+            required
+          />
+          <input type="submit" value="Entrar" class="submit-btn login" />
+          <a class="singup-btn show-modal" href="#">Cadastrar-se</a>
+        </fieldset>
+      </form>
+    </section>
+
+    <!-- APP VERSION -->
+    <div class="version">
+      <span class="app-version">Versão 1.0</span>
+    </div>
+
+    <!-- SINGUP (HIDDEN) -->
+    <section>
+      <div class="modal hidden">
+        <form method="post" action="#" class="singup-form">
+          <fieldset>
+            <!-- NAME -->
+            <h2 class="singup-title">Passo 1</h2>
+            <button class="close-btn">Login</button>
+            <input
+              type="text"
+              name="text"
+              id="nome"
+              placeholder="Nome"
+              required
+            />
+            <!-- LAST NAME -->
+            <input
+              type="text"
+              name="text"
+              id="nome"
+              placeholder="Sobrenome"
+              required
+            />
+            <!-- EMAIL SINGUP -->
+            <input
+              type="email"
+              name="email"
+              id="email-singup"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+              placeholder="Email"
+              required
+            />
+            <!-- PASSWORD SINGUP -->
+            <input
+              type="password"
+              name="senha"
+              id="senha"
+              title="Deve conter pelo menos um número e uma letra maiúscula e minúscula e pelo menos 8 ou mais caracteres"
+              placeholder="Senha"
+              required
+            />
+            <div class="terms-box">
+              <input
+                type="checkbox"
+                id="agree-terms"
+                name="agree-terms"
+                checked
+              />
+              <label for="agree-terms">
+                Eu concordo com os
+                <a href="#" class="terms">Termos de Serviço</a></label
+              >
+            </div>
+            <input
+              type="submit"
+              value="Cadastrar-se"
+              class="submit-btn singup"
+            />
+          </fieldset>
+        </form>
+      </div>
+
+      <!-- RESET PASSWORD VIA EMAIL (HIDDEN)-->
+      <div class="modal-pwd hidden">
+        <form method="post" action="#" class="reset-pwd-form">
+          <fieldset>
+            <div class="reset-pwd-box">
+              <h2 class="reset-pwd-title">Mudar Senha</h2>
+              <h3 class="reset-pwd-info">
+                Redefina a senha da sua conta Log Park confirmando seu endereço
+                de e-mail
+              </h3>
+            </div>
+            <input
+              type="email"
+              name="email"
+              id="email-reset"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+              placeholder="Email"
+              required
+            />
+            <input type="submit" value="Mudar Senha" class="submit-btn pwd" />
+          </fieldset>
+        </form>
+      </div>
+      <!-- OVERLAY -->
+      <div class="overlay hidden"></div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

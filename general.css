@@ -1,0 +1,84 @@
+/* ALL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* MAIN ELEMENTS */
+html {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 1.5;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #0ca678;
+  color: #f8f9fa;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+img {
+  width: 7rem;
+}
+
+h2 {
+  margin-bottom: 50px;
+  color: #343a40;
+  font-size: 30px;
+}
+
+fieldset {
+  border: none;
+  margin: auto;
+}
+
+label {
+  color: #868e96;
+  margin-right: auto;
+}
+
+input {
+  display: block;
+
+  margin: 0 auto 20px auto;
+  border-radius: 0.2rem;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  width: 375px;
+  padding: 13px;
+}
+
+/* INPUTS */
+#email-login,
+#email-reset,
+#email-singup,
+#senha,
+#nome {
+  border: 1px solid #ced4da;
+}
+
+input::placeholder {
+  color: #868e96;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="text"]:focus {
+  border: 1px solid #0ca678 !important;
+  outline: none;
+  transition: border 0.3s ease-in-out;
+}
+
+input[type="checkbox"] {
+  width: fit-content;
+  margin-top: 20px;
+  margin-right: 10px;
+}

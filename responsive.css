@@ -1,0 +1,121 @@
+/* RESPONSIVE AND PORTTRAIT */
+@media only screen and (min-width: 320px) and (max-width: 480px) and (orientation: portrait) {
+  /* MAIN */
+  body {
+    background-color: #f8f9fa;
+    overflow: scroll;
+    height: auto;
+    width: 100vw;
+  }
+
+  img {
+    width: 6.5rem;
+    content: url(./img/logo-7.png);
+    margin-top: 24px;
+  }
+
+  fieldset {
+    width: 75%;
+  }
+
+  h2 {
+    margin-left: 16px;
+    align-self: flex-start;
+  }
+
+  input {
+    width: 90%;
+  }
+
+  /* LOGIN */
+  .login-form {
+    box-shadow: none;
+    margin-top: -5px;
+    margin-bottom: 0.5px;
+  }
+
+  .forgot-pwd {
+    margin-right: 32px;
+  }
+
+  /* BUTTONS */
+  .submit-btn {
+    width: 90%;
+  }
+  .singup-btn {
+    border: none;
+    width: 90%;
+  }
+
+  /* APP VERSION */
+  .version {
+    margin: 0 auto;
+    color: #28b487;
+    font-weight: 500;
+  }
+
+  /* BUG WITH THE CLOSE BUTTON */
+  /* HIDDEN SINGUP FORM */
+  .singup-form {
+    height: 100vh;
+  }
+
+  /* BUG, NEEDS A CLOSE BTN */
+  /* HIDDEN RESET PASSWORD FORM */
+  .reset-pwd-form {
+    height: 100vh;
+  }
+}
+
+/* RESPONSIVE AND LANDSCAPE */
+@media only screen and (min-width: 550px) and (max-width: 815px) and(orientation: landscape) {
+  /* MAIN */
+  body {
+    overflow: scroll;
+    height: auto;
+    width: 100vw;
+  }
+
+  img {
+    width: 6.5rem;
+    margin-top: 48px;
+    margin-bottom: 48px;
+  }
+
+  fieldset {
+    width: 90%;
+  }
+
+  h2 {
+    margin-left: 16px;
+    align-self: flex-start;
+  }
+
+  input {
+    width: 90%;
+  }
+
+  /* LOGIN */
+  .login-form {
+    height: 26rem;
+    min-width: 400px;
+    margin-top: -5px;
+    margin-bottom: 32px;
+  }
+
+  /* BUTTONS */
+  .submit-btn {
+    width: 90%;
+  }
+  .singup-btn {
+    width: 90%;
+  }
+
+  /* APP VERSION */
+  .version {
+    margin: 0 auto;
+    color: #f8f9fa;
+    font-weight: 500;
+    margin-bottom: 32px;
+  }
+}
